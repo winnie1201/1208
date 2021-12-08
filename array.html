@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>陣列物件</title>
+</head>
+<body>
+    <h3>計算學生成績平均數</h3>
+    學生數量<input type="text" value="Hello" id="text" />
+    <button onclick="check();">check</button>
+    <script>
+        /*
+            function check(){
+                let grades=[]; //新的陣列物件[]
+                grades[0]=80; //陣列[索引]代表陣列中的一個格子
+                grades[1]=70;
+                grades[2]=90;
+                //逐一取得陣列中的資料
+                let total=0;
+                for(let i=0;i<grades.length;i++){
+                    total=total+grades[i];
+                }
+                console.log(total/grades.length);
+            }
+        */
+        
+            function check(){
+                /*let n=prompt("請輸入學生成績","");
+                n=paresInt(n);
+                */
+                let grades=[]; //新的陣列物件[]
+                for(let i=0;i<3;i++){
+                    grades[i]=parseInt(prompt("請輸入學生的成績",""));
+                }
+                console.log(grades);
+                //逐一取得陣列中的資料
+                let total=0;
+                for(let i=0;i<grades.length;i++){
+                    total=total+grades[i];
+                }
+                console.log(total/grades.length);
+            }
+        
+        /*
+        使用者輸入各分數後做平均
+
+        function check(){
+            let grades=[]; //新的陣列物件[]
+            for(let i=0;i<3;i++){
+                grades[i]=parseInt(prompt("請輸入學生的成績",""));
+            }
+            console.log(grades);
+            //逐一取得陣列中的資料
+            let total=0;
+            for(let i=0;i<grades.length;i++){
+                total=total+grades[i];
+            }
+            console.log(total/grades.length);
+        }
+        */
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下拉式選單</title>
+</head>
+<body>
+    <h3>下拉式選單</h3>
+    <select id="gender">
+        <option>性別</option>
+        <option value="male">男</option>
+        <option value="famale">女</option>
+    </select>
+    <button onclick="check();">選擇</button>
+    <script>
+        function check(){
+            let gender=document.getElementById("gender");
+            if(gender.selectedIndex==0){
+                window.alert("請選擇性別");
+            }else{
+                let option=gender.options[gender.selectedIndex];
+                console.log(option.value);
+                if(option.value=="male"){
+                    document.body.style.backgroundColor="blue";
+                }else{
+                    document.body.style.backgroundColor="pink";
+                }
+            }
+            /*
+            console.log("目前選項的索引",gender.selectedIndex);
+            console.log("所有的選項標籤",gender.options[1].value);
+
+            */
+        }
+    </script>
+</body>
+</html>

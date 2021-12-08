@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Math and String</title>
+</head>
+<body>
+    <h3>數學和字串物件</h3>
+    <input type="text" value="Hello" id="text"/>
+    <button onclick="check();">check</button>
+    <script>
+        /*
+            function check(){
+                //console.log("取亂數", Math.random()*40+60);
+                //機率事件
+                let at=20;
+                if(Math.random()<=0.2){
+                    at=at*2;
+                }
+                console.log(at);
+                
+                console.log("圓周率", Math.PI);
+                console.log("開根號", Math.sqrt(10));
+                console.log("四捨五入", Math.round(3.5));
+                
+            }
+        */
+        function check(){
+            //字串物件
+            //let text=new String("Hello")+new String("World");
+            let value=document.getElementById("text").value;
+            if(value.length==0){
+                window.alert("請輸入文字");
+            }else if(value.toLowerCase().indexOf("fuck")>-1){
+                window.alert("請不要說髒話");
+            }
+            /*
+            console.log("字串的長度",value.length);
+            console.log("取得第二個字元",value.charAt(1));
+            console.log("全部轉成大寫",value.toUpperCase());
+            console.log("取得子字串",value.substring(1,4));
+            console.log("檢查字串是否包含 abc",value.indexOf("abc"));
+            console.log("檢查字串是否包含 llo",value.indexOf("llo"));
+            */
+        }
+
+    </script>
+</body>
+</html>

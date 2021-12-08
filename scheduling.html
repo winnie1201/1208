@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>排程 Scheduling</title>
+</head>
+<body>
+    <h3>排程</h3>
+    <div id="timer">10</div>
+    <script>
+    
+    /*
+        //延遲一段時間再執行函式
+        //window.setTimeout(函式,時間);
+        function test(){
+            console.log("Hello");
+        } 
+        window.setInterval(test,2000);
+    */
+        //延遲一段時間再執行函式
+        //window.setTimeout(函式,時間);
+    
+    /*
+        function countdown(){ 
+            let timer=document.getElementById("timer");
+            timer.innerHTML=timer.innerHTML-1;
+            if (timer.innerHTML>0){
+            window.setTimeout(countdown,1000);
+            }else{   //倒數結束>做事
+                window.location.href="https://www.google.com/";
+            }
+        }
+        //Async非同步的程式
+        window.setTimeout(countdown,1000);
+    */
+
+    //用setInterval製作倒數計時器
+     /*
+        function countdown(){ 
+            let timer=document.getElementById("timer");
+            timer.innerHTML=timer.innerHTML-1;
+            if (timer.innerHTML>0){
+            window.setInterval(countdown,1000);
+            }else{   //倒數結束>做事
+                window.location.href="https://www.google.com/";
+            }
+        }clearInterval()
+        //Async非同步的程式
+        window.setInterval(countdown,1000);
+    */
+    
+    </script>
+</body>
+</html>
